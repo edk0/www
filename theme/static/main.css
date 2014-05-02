@@ -1,0 +1,228 @@
+
+@import url("pygment.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@import url("http://fonts.googleapis.com/css?family=Rokkitt:700");
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+
+body {
+ margin: 0px;
+ margin-top: 20px;
+ overflow-x: hidden;
+ background-image: url("paper_fibers.png");
+ font-smooth: always;
+}
+a[href^="http:"], a[href^="https:"], a[href^="mailto:"] {
+ target: new tab;
+}
+pre {
+ font-size: 12px;
+ line-height: 14px;
+ font-family: 'Source Code Pro', monospace;
+ overflow-y: hidden;
+}
+.no-css {
+ display: none;
+}
+.content {
+ position: absolute;
+ top: 40px;
+ width: 100%;
+ clear: both;
+ font-family: 'Open Sans', 'Verdana', sans-serif;
+}
+.content .pad {
+ padding: 8px;
+}
+h1, h2 {
+ margin: 0px;
+}
+
+/* header & menu */
+.header {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+}
+.menu {
+ font-family: 'Open Sans', 'Verdana', sans-serif;
+ border-bottom: 1px solid #cccccc;
+ /*height: 40px;*/
+ width: 100%;
+ vertical-align: top;
+ padding: 0;
+ font-size: 0;
+}
+.menu li {
+ border-right: 1px solid #cccccc;
+ height: 40px;
+ display: inline-block;
+ list-style: none;
+ font-size: 20px;
+ font-weight: 300;
+ padding: 0;
+}
+.menu li:first-child {
+ font-weight: 400;
+}
+.menu li a, .menu li span {
+ display: block;
+ height: 40px;
+ padding: 0 10px;
+ line-height: 40px;
+ color: inherit;
+ text-decoration: none;
+ transition:background-color 200ms, color 200ms;
+ -webkit-transition:background-color 200ms, color 200ms;
+ overflow: hidden;
+}
+.menu li.menu-notice {
+ float: right;
+ right: 0px;
+ padding: 0px;
+ font-size: 15px;
+ line-height: 40px;
+ border-right: none;
+ border-left: 1px solid #cccccc;
+}
+.icon-github {
+ width: 32px;
+ height: 40px;
+ text-indent: -9999px;
+ white-space: nowrap;
+ overflow: hidden;
+ background: url("github.png") center no-repeat;
+}
+
+/* post index */
+.post-info {
+ font-size: 80%;
+}
+.post-list {
+ list-style-type: none;
+ margin: 0px;
+ padding: 0px;
+}
+.post-list li, .post-list li * {
+ width: auto;
+}
+.post-list .entry {
+ border-bottom: 1px solid #cccccc;
+}
+.post-list .entry a {
+ display: block;
+ padding: 0 10px;
+ line-height: 40px;
+ width: auto;
+ font-weight: 300;
+ transition:background-color 200ms, color 200ms;
+ -webkit-transition:background-color 200ms, color 200ms;
+}
+.pagination {
+ margin-top: 32px;
+ border-top: 1px solid #cccccc;
+}
+.pagination a {
+ display: inline-block;
+ line-height: 40px;
+ padding: 0 10px;
+}
+
+/* article pages */
+.entry-title {
+ font-size: 200%;
+ font-family: 'Rokkitt', serif;
+ font-weight: 700;
+}
+.post-header {
+ padding: 6px 0px 0px 12px;
+}
+.post-info {
+ font-size: smaller;
+}
+.post-tags {
+ font-family: 'Rokkitt', serif;
+}
+.post-tags ul {
+ display: inline;
+ list-style-type: none;
+ padding: 0px;
+}
+.post-tags li {
+ display: inline;
+}
+.post-tags li:first-child:before {
+ content: "tagged ";
+}
+.post-tags li:after {
+ content: ", ";
+}
+.post-tags li:last-child:after {
+ content: "";
+}
+.article {
+ max-width: 800px;
+ font-family: Georgia, serif;
+ font-weight: 400;
+ padding: 0px 12px 0px 12px;
+}
+.codehilitetable {
+ background-color: #ffffff;
+ border-radius: 4px;
+}
+.codehilitetable pre {
+ margin: 0px 0px;
+ padding: 0px;
+}
+.codehilite pre {
+ margin: 0px 0px;
+ padding: 0px;
+ overflow-x: auto;
+}
+.codehilite {
+ background-color: #ffffff;
+ border-radius: 4px;
+ padding: 4px;
+}
+.codehilitetable .codehilite {
+ border-radius: 0px;
+ padding: 0px;
+}
+.article a {
+ font-weight: bold;
+}
+
+/* colouring, in theory */
+.menu {
+ background-color: #e8eeff;
+}
+a {
+ color: #37456e;
+ text-decoration: none;
+}
+a:hover {
+ color: #6375a8;
+}
+.menu a:hover {
+ color: #37456e;
+ background-color: #e1e8fc;
+}
+.post-list .entry a {
+ background-color: rgba(232, 238, 255, 0);
+}
+.post-list .entry a:hover {
+ color: #37456e;
+ background-color: rgba(232, 238, 255, 1);
+}
+
+table.codehilitetable {
+ width: 100%;
+}
+
+td.code {
+ max-width: 100%;
+}
+
+td.linenos {
+ vertical-align: top;
+}

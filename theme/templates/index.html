@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<ul class="post-list">
+{% for article in articles_page.object_list %}
+  <li>
+    <div class="entry {{ loop.cycle('odd', 'even') }}">
+      <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}
+        {# {% if article.summary %}<span class="post-summary"> &mdash; {{ article.summary }}</span>{% endif %} #}
+      </a></div></li>
+{% endfor %}
+</ul>
+{% include 'pagination.html' %}
+{% endblock content %}
