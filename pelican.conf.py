@@ -7,7 +7,6 @@ SITEURL = 'http://notes.glin.es'
 TIMEZONE = "Europe/London"
 
 GITHUB_URL = 'http://github.com/edk0/'
-DISQUS_SITENAME = "edk141"
 PDF_GENERATOR = False
 REVERSE_CATEGORY_ORDER = True
 LOCALE = map(str, ["en_GB.utf8", "en_GB", "en_US.utf8", "en_US", "C.UTF-8", "C"])
@@ -20,8 +19,6 @@ FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 LINKS = [('contact', 'mailto:edk141@gmail.com')]
-
-SOCIAL = (('github', 'http://github.com/edk0'),)
 
 JINJA_EXTENSIONS = ['jinja2.ext.do']
 
