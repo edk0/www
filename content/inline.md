@@ -7,7 +7,7 @@ Summary: ...
 
 C has a keyword called `inline`. It's a source of considerable grief among
 people who don't understand what it does—which, as I've discovered recently,
-includes people who have an otherwise understand C very well.
+includes people who otherwise understand C very well.
 
 It's common to see people make assertions like “you should only ever use
 inline with static,” which turns out to be reasonable advice. I don't think
