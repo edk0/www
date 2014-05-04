@@ -9,6 +9,9 @@
         <span title="{{ article.date.isoformat() }}">
           {{ article.locale_date }}
         </span>
+        <span class="no-css">
+          ({{ article.date.isoformat() }})
+        </span>
       </span>
     </h2>
 {% if article.tags %}
