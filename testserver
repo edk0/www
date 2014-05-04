@@ -1,0 +1,16 @@
+#!/bin/sh
+CONF=$(mktemp --tmpdir XXXXXXXXXX.py)
+# this is a horrible hack.
+# override the config to make the site work on a server
+# that needn't be configured exactly like mine is.
+cat pelican.conf.py - > $CONF <<END
+RELATIVE_URLS = True
+for k, v in globals().items():
+  if k.endswith('_URL') and not v.endswith('.html'):
+    globals()[k] = v + '.html'
+END
+pelican -r -s $CONF -o output content &
+trap "pkill pelican" TERM INT
+cd output
+python -m SimpleHTTPServer
+
