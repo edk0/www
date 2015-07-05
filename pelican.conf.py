@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'edk'
 SITENAME = "edk's notes"
-SITEURL = 'http://notes.glin.es'
+SITEURL = 'https://kellett.im'
 TIMEZONE = "Europe/London"
 
 GITHUB_URL = 'http://github.com/edk0/'
