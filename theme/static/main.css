@@ -1,10 +1,17 @@
 
+html, body { height: 100%; }
 body {
  margin: 0px;
- margin-top: 20px;
  overflow-x: hidden;
+ background-color: #f2f4f4;
  background-image: url("paper_fibers.png");
  font-smooth: always;
+}
+#wrapper {
+ padding: 0 0 20px;
+ min-height: 100%;
+ box-sizing: border-box;
+ position: relative;
 }
 a[href^="http:"], a[href^="https:"], a[href^="mailto:"] {
  target: new tab;
@@ -19,10 +26,12 @@ pre {
  display: none;
 }
 .content {
- position: absolute;
- top: 40px;
+ position: relative;
+ /*top: 40px;*/
+ /*margin-top: 40px;*/
+ padding-top: 40px;
+ padding-bottom: 20px;
  width: 100%;
- clear: both;
  font-family: 'Open Sans', 'Verdana', sans-serif;
 }
 .content .pad {
@@ -80,13 +89,28 @@ h1, h2 {
  border-right: none;
  border-left: 1px solid #cccccc;
 }
-.icon-github {
+.icon-tvguho {
  width: 32px;
  height: 40px;
  text-indent: -9999px;
  white-space: nowrap;
  overflow: hidden;
  background: url("github.png") center no-repeat;
+}
+
+/* footer */
+.footer {
+ height: 20px;
+ box-sizing: border-box;
+ width: 100%;
+ bottom: 0;
+ position: absolute;
+ font-family: 'Open Sans', 'Verdana', sans-serif;
+ background-color: #e8eeff;
+ border-top: 1px solid #cccccc;
+ font-size: 80%;
+ line-height: 14px;
+ padding: 3px;
 }
 
 /* post index */
@@ -124,13 +148,21 @@ h1, h2 {
 }
 
 /* article pages */
-.entry-title {
- font-size: 200%;
+h1, h2, h3, h4 {
  font-family: 'Rokkitt', serif;
  font-weight: 700;
 }
+h1 {
+ font-size: 200%;
+}
+h2 {
+ font-size: 140%;
+}
+h3, h4 {
+ font-size: 100%;
+}
 .post-header {
- padding: 6px 0px 0px 12px;
+ padding: 12px 0px 0px 12px;
 }
 .post-info {
  font-size: smaller;

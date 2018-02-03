@@ -42,6 +42,7 @@
     <h2>{% block content_title %}{% endblock %}</h2>
     {% endif %}
   </div>
+  <div id="wrapper">
   <div class="content">
 {% block content %}
 {% endblock %}
@@ -49,10 +50,10 @@
   <div id="nav" class="header">
     <h2 class="no-css">Navigation</h2>
     <ul class="menu">
-      <li class="menu-notice"><span>Copyright &copy; Ed Kellett, 2013-2014.</span></li>
-      <li class="title"><a href="{{ SITEURL }}">{{ SITENAME }}</a></li>
+      <li class="menu-notice"><span>Copyright &copy; Ed Kellett, 2013-2018.</span></li>
+      <li class="title"><a href="/">{{ SITENAME }}</a></li>
     {% if GITHUB_URL %}
-      <li><a class="icon-github" href="{{ GITHUB_URL }}">github</a></li>
+      <li><a class="icon-tvguho" href="{{ GITHUB_URL }}">github</a></li>
     {% endif %}
     {% for title, link in LINKS %}
       <li class="menu-item"><a href="{{ link }}">{{ title }}</a></li>
@@ -67,6 +68,15 @@
       {% endfor %}
     {% endif %}
     </ul>
+  </div>
+  <div id="footer" class="footer">
+    {% if this is defined %}{% set mypath = this.url %}{% else %}{% set mypath = "" %}{% endif %}
+    {% if WHERE == "plain" %}
+      <a href="http://kellett.i2p/{{ mypath }}?i2paddresshelper=dmO74Npjl6CAf0TLq~osnqjDYaby1SgMNx1M6-WUW-3rri53-mPi~Hpc3a0gW0bQ6R55ZKh~QgoGTDzW0l6MvdQVEAPCTHpuPtV~KXEkYLcAdfe0cMr0Scq5zfM3vP6Q5Wt7GPfzYBBCyXSDVZ6upjcvGBlfNS7pOp4ffrc2Z4rlTtbSusSMFVSPtvtXpqtiIS5f8IDQdkMKYRnwRoFMf~IBUZJDGOqb7Om-jJk2LV1FJSeJc1GUfaPLhAe77Xe2Xm8bl7TaclORDwyTNpfKwrPnNP1yFo-Mf4EY3i9gi7m2f~d-H4Rx~1s9gWIinf-QvPS-PYgW7Q9smtBptRqjWHXIlXCNWH2PDoUfCcpa0tWrQwWCdaD5kc8I7PaS9xu248hOmi1iWRmQowqMb7PNejwjVybuoMT8T-MoADAmFXmJ0aeuk2ZjO7nNnQStunqndVvlilwJJbU4OmmX2CJeOZJGWYCWYbIc15kDYP-RKe80QaPahRxHZYCC9oTVMbRfBQAEAAEAAA==">kellett.i2p</a>
+    {% elif WHERE == "i2p" %}
+      <a href="https://kellett.im/{{ mypath }}">kellett.im</a>
+    {% endif %}
+  </div>
   </div>
 </body>
 </html>
