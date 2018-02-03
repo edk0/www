@@ -18,7 +18,7 @@ THEME = "theme/"
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-LINKS = [('contact', 'mailto:edk141@gmail.com')]
+LINKS = [('contact', 'mailto:e@kellett.im')]
 
 JINJA_EXTENSIONS = ['jinja2.ext.do']
 
