@@ -253,3 +253,69 @@ td.code {
 td.linenos {
  vertical-align: top;
 }
+
+/* rokkitt-700 - latin */
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 700;
+  src: url('rokkitt-v10-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Rokkitt Bold'), local('Rokkitt-Bold'),
+       url('rokkitt-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('rokkitt-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('rokkitt-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('rokkitt-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('rokkitt-v10-latin-700.svg#Rokkitt') format('svg'); /* Legacy iOS */
+}
+/* source-code-pro-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('source-code-pro-v6-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'),
+       url('source-code-pro-v6-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('source-code-pro-v6-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('source-code-pro-v6-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('source-code-pro-v6-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('source-code-pro-v6-latin_latin-ext-regular.svg#SourceCodePro') format('svg'); /* Legacy iOS */
+}
+/* source-code-pro-700 - latin_latin-ext */
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('source-code-pro-v6-latin_latin-ext-700.eot'); /* IE9 Compat Modes */
+  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'),
+       url('source-code-pro-v6-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('source-code-pro-v6-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('source-code-pro-v6-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */
+       url('source-code-pro-v6-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('source-code-pro-v6-latin_latin-ext-700.svg#SourceCodePro') format('svg'); /* Legacy iOS */
+}
+/* open-sans-300 - latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-300.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-300.woff') format('woff'), /* Modern Browsers */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans'), local('OpenSans'),
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('open-sans-v13-latin_greek_cyrillic-ext_vietnamese_greek-ext_latin-ext_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
