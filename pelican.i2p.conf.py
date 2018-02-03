@@ -3,10 +3,10 @@ from __future__ import unicode_literals
 
 AUTHOR = 'edk'
 SITENAME = "edk's notes"
-SITEURL = 'https://kellett.im'
+SITEURL = 'http://kellett.i2p'
 TIMEZONE = "Europe/London"
 
-WHERE = 'plain'
+WHERE = 'i2p'
 
 GITHUB_URL = 'http://github.com/edk0/'
 PDF_GENERATOR = False
@@ -20,7 +20,7 @@ THEME = "theme/"
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-LINKS = [('contact', 'mailto:e@kellett.im')]
+LINKS = [('contact', 'mailto:edk@mail.i2p')]
 
 JINJA_EXTENSIONS = ['jinja2.ext.do']
 
