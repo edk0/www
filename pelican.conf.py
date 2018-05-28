@@ -40,3 +40,5 @@ CATEGORY_URL = "c/{slug}"
 CATEGORY_SAVE_AS = "c/{slug}.html"
 TAG_URL = "t/{slug}"
 TAG_SAVE_AS = "t/{slug}.html"
+
+RELATIVE_URLS = False
